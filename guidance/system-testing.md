@@ -1,14 +1,35 @@
-# TEST STRATEGY
+# Test Strategy
+
+## Contents
 
 <!--TOC max3-->
 
+
+## Revision History
+
+| Version | Issued     | Comments
+| ---     | ---        | ---
+| 0.1     | 26-10-2016 | Initial version by @johnstok
+| 0.2     | 25-10-2019 | Minor updates and context by @KeithNT
+
+## Review
+
+| Review frequency | Next review due
+| ---              | ---
+| Annual           | 31-01-2020
+
+
+## Executive Summary
+
+This document is written as the Test Strategy for testing activities within Digital Transformation Division but is also provided as guidance for other teams aligning with the Digital Scotland Service Standard and is available for anyone to use under the Open Government Licence [LICENSE.md](../LICENSE.md).
+
 ## Purpose
-This test strategy describes the principles, approach, standards, practices, tools and techniques that are to be used for all the testing activities for either agile or waterfall projects, by the Online Services and Strategy division.
-The information within this strategy will be used to create the required test artefact using the templates documented in the **References section**.
+This test strategy describes the principles, approach, standards, practices, tools and techniques that are to be used for all the testing activities for either agile or waterfall projects, by the Digital Transformation Division.
+The information within this strategy will be used to create the required test artefact using the templates documented in the **References** section.
 
 
 ## Introduction
-Software Testing is the process of evaluating an attribute or capability of a component or system and determining that it meets its required results.  Usually, quality is constrained to such topics as correctness and completeness, but can also include more technical requirements as described in the system quality attributes. Please refer to the **References section** for the location of these attributes. Testing is a process of technical investigation, performed on behalf of stakeholders, that is intended to reveal quality-related information about the product with respect to the context in which it is intended to operate. This includes, but is not limited to, the process of executing a component or system with the intent of finding defects. Quality is not an absolute; it is value to some person.
+Software Testing is the process of evaluating an attribute or capability of a component or system and determining that it meets its required results.  Usually, quality is constrained to such topics as correctness and completeness, but can also include more technical requirements as described in the system quality attributes. Please refer to the **References** section for the location of these attributes. Testing is a process of technical investigation, performed on behalf of stakeholders, that is intended to reveal quality-related information about the product with respect to the context in which it is intended to operate. This includes, but is not limited to, the process of executing a component or system with the intent of finding defects. Quality is not an absolute; it is value to some person.
 
 
 ## The Testing Process
@@ -148,7 +169,7 @@ The test techniques that can be included within the test plan, are described bel
 
 This test technique is used to verify the functional and non-functional requirements and this is completed using a defined ruleset which will provide a mechanism to ensure that the requirements accurately describe what is needed. Each ruleset is assigned a %target and each requirement is reviewed against all ten rulesets and they either pass or fail. The total %pass rate is compared to the %target - which will determine which rulesets have passed or failed - see below for the ten rulesets.
 
-Please refer to the **References section** at the end of this document for the location of the Test Requirements Checklist document and definitions of the rulesets.
+Please refer to the **References** section at the end of this document for the location of the Test Requirements Checklist document and definitions of the rulesets.
 
 This should happen prior to development starting, therefore reducing costs of defects if found at this stage.
 
@@ -221,8 +242,6 @@ This test technique is used to demonstrate / confirm that the individual compone
 
 This test technique is facilitated by the use of a CI Tool and will be used by the Engineers. This will encompass the build and test process and will allow for reporting on the success and failure of your build and test runs.
 
-Please refer to the **References section** at the end of this document for the location of the Release Strategy, for more information.
-
 ### System Testing
 
 | | |
@@ -282,7 +301,7 @@ Test cases are grouped into a regression pack, based on happy paths, must tests 
 
 This test technique is used to demonstrate / confirm that the system integrates as required within the system architecture, as well as demonstrating / confirming that the non-business aspects of the system function correctly.
 
-The system quality attributes will be used to ascertain the test cases - please refer to the **References section** at the end of this document for the location of the System Quality Attribute documents.
+The system quality attributes will be used to ascertain the test cases - please refer to the **References** section at the end of this document for the location of the System Quality Attribute documents.
 
 N.B. The Security document includes several methodologies and so the relevant test plan will document which ones are applicable for which project.
 
@@ -465,7 +484,7 @@ The diagram below illustrates the key activities, roles, timings and benefits of
 
 Where possible, and where there is high repeatability of tests, we will automate tests using the framework approach.  But sometimes, if the project have highly visual and graphical elements within the solution, some areas will not be automated, and will be tested using a combination of manual tests, and exploratory tests.   
 
-Unit and integration testing with continuous integration is recommended in all agile application developments to ensure high quality deliveries and optimise the development timeline. For further information please refer to the **References section** at the end of this document for the location of the Architecture and Development Strategy.
+Unit and integration testing with continuous integration is recommended in all agile application developments to ensure high quality deliveries and optimise the development timeline.
 
 Rather than leave all of the performance testing  until late in the delivery of the overall solution, it is recommended that micro-performance testing be carried out at intervals throughout a project.  Ideally this would begin as soon as there is enough functionality to run some meaningful tests with load, with additional scripting, execution and analysis work being done during agreed later sprints.
 
@@ -636,7 +655,7 @@ Test cycles are used to group certain test cases based on their priorities, the 
 
 ### Test Readiness Review checklist - waterfall only
 The test readiness review checklist will assess whether the project is ready for testing to commence. This will be used by waterfall only, as the daily scrum meeting under agile is the equivalent.
-Please refer to the **References section** at the end of this document for the location of the Test Readiness Review checklist Template.
+Please refer to the **References** section at the end of this document for the location of the Test Readiness Review checklist Template.
 
 
 ## Quality Gates
@@ -705,7 +724,7 @@ The quality gates, which define a set of conditions that must be met to move fro
 
 
 ## Roles and Responsibilities
-The following roles and responsibilities will be required for the Online Services and Strategy division, for all the testing activities described within this Test Strategy and the Test Plans.
+The following roles and responsibilities will be required for the Digital Transformation Division, for all the testing activities described within this Test Strategy and the Test Plans.
 
 ### Test Manager
 - Prepare Test Report - Dashboard
@@ -865,12 +884,9 @@ The following table describes the defect process flow and who is responsible for
 
 | Document                                 | Location
 | ---                                      | ---
-| Test Plan Template                       | `/templates`
-| Test Completion Report Template          | `/templates`
-| Test Readiness Review Checklist Template | `/templates`
-| Test Requirements Checklist              | `/templates`
-| System Quality Attributes                | *TODO*
-| Infrastructure Strategy                  | *TODO*
-| Architecture and Development Strategy    | *TODO*
-| Release Strategy                         | *TODO*
-| Third Party Test Report              	   | `/templates`
+| Test Plan Template                       | [test-plan.md](../templates/test-plan.md)
+| Test Completion Report Template          | [test-completion-report.md](../templates/test-completion-report.md)
+| Test Readiness Review Checklist Template | [test-readiness-review.md](../templates/test-readiness-review.md)
+| Test Requirements Checklist              | [test-requirements-checklist.md](../templates/test-requirements-checklist.md)
+| System Quality Attributes                | [quality-attribute-specification.md](../templates/quality-attribute-specification.md)
+| Third Party Test Report              	   | [test-third-party-report.md](../templates/test-third-party-report.md)
